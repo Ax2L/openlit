@@ -24,7 +24,7 @@ services:
       INIT_DB_PASSWORD: ${OPENLIT_DB_PASSWORD:-OPENLIT}
       SQLITE_DATABASE_URL: file:/app/client/data/data.db
     ports:
-      - "3000:3000"
+      - "3355:3000"
     depends_on:
       - clickhouse
     volumes:
